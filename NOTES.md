@@ -52,7 +52,11 @@ as a user i need to generate a colored qr code
 as a user I need to enter text to generate qr code
 as a user I need to "download" qr code as image
 
-sub-tasks
+sub-tasks:
+- add user input text field
+- add color picker input field
+o size and img sliders
+o submit button
 
 json request structure
 params: data - mandatory, size, color, bgcolor, qzone
