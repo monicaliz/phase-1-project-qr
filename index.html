@@ -21,15 +21,30 @@
 
 <main>
     <section id="qr-settings-card" class="container container-front">
+
         <header>
             <h2>Generate your QR code!</h2>
             <h3>Adjust the settings below to customize your QR code:</h3>
         </header>
+
         <div class="setting">
-            <label for="data">text or url</label>
+            <label for="data">text / url</label>
             <span class="sub-label">include text or a url you want the QR code to lead to</span>
-            <input type="text" name="data" id="data" min="0" max="900" required>
-            
+            <input type="text" name="data" id="data" min="0" max="900" required />
+        </div>
+
+        <div class="colors">
+            <div class="setting">
+                <label for="color">QR Code Color</label>
+                <input id="color" type="color" value="#000000" />
+                <span id="color-value">#000000</span>
+            </div>
+
+            <div class="setting">
+                <label for="color">Background Color</label>
+                <input id="color" type="color" value="#FFFFFF" />
+                <span id="color-value">#FFFFFF</span>
+            </div>
         </div>
         
     </section>
