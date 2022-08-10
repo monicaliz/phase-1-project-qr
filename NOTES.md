@@ -56,3 +56,8 @@ sub-tasks
 
 json request structure
 params: data - mandatory, size, color, bgcolor, qzone
+
+
+## 04_lessons_learned
+- html:5 shortcut on vs code
+- using git to create a local repo and then push to remote repo on github
