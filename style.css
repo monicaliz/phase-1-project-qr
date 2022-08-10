@@ -1,3 +1,11 @@
 body {
     background-color: darkseagreen;
+    padding: 0 2rem;
+}
+
+h1 {
+    border-bottom: 1px solid blanchedalmond;
+    display: inline-block;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
 }
