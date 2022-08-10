@@ -1,11 +1,14 @@
 body {
-    background-color: darkseagreen;
+    background-color: #A7CAA7;
     padding: 0 2rem;
+    font-family: 'Nova Mono', monospace;
+    font-weight: 400;
 }
 
 h1 {
-    border-bottom: 1px solid blanchedalmond;
+    border-bottom: 2.5px solid #A6A6C9;
     display: inline-block;
     padding-right: 2rem;
     padding-bottom: 0.5rem;
+   font-family: 'Nova Mono', monospace;
 }
