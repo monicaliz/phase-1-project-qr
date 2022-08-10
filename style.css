@@ -35,6 +35,10 @@ main {
     min-height: 700px;
 }
 
+.container header {
+    text-align: center;
+}
+
 .container header h2 {
     margin-bottom: 0.2rem;
     font-weight: 400;
@@ -44,4 +48,31 @@ main {
     margin-bottom: 0.2rem;
     font-weight: 200;
     font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.setting {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-level {
+
+}
+
+input[type="text"] {
+    border: 1px solid #000000;
+    padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 0.75rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #C9A6C9
 }
