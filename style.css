@@ -12,3 +12,36 @@ h1 {
     padding-bottom: 0.5rem;
    font-family: 'Nova Mono', monospace;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* enables card flipping */
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #A6A6C9;
+    border-radius: 1rem;
+    min-width: 300px;
+    max-width: 500px;
+    width: 50%;
+    min-height: 700px;
+}
+
+.container header h2 {
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+}
+
+.container header h3 {
+    margin-bottom: 0.2rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
