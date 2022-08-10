@@ -34,6 +34,7 @@
         </div>
 
         <div class="colors">
+
             <div class="setting">
                 <label for="color">QR Code Color</label>
                 <input id="color" type="color" value="#000000" />
@@ -61,21 +62,26 @@
           
         <div class="setting">
             <fieldset>
+                <legend>image format</legend>
                 <div>
                     <input type="radio" name="format" id="format" value="png" checked>
                     <label for="png">PNG</label>
                 </div>
                 <div>
-                    <input type="radio" name="format" id="format" value="gif" checked>
+                    <input type="radio" name="format" id="format" value="gif" >
                     <label for="gif">GIF</label>
                 </div>
                 <div>
-                    <input type="radio" name="format" id="format" value="jpeg" checked>
+                    <input type="radio" name="format" id="format" value="jpeg" >
                     <label for="jpeg">JPEG</label>
                 </div>
             </fieldset>
-        </div>
+        </div>    
 
+    </div>
+        <div class="submit">
+            <button id="submit" type="submit" disabled>generate QR code</button>
+        </div>
     </section>
 
 </main>
