@@ -125,7 +125,7 @@ input[type="range"] {
     border-radius: 3px;
     background: #E0CCE0;
     outline: none;
-    margin: 0;
+    margin: 0.5rem 0;
     padding: 0;
 }
 
@@ -175,3 +175,106 @@ input::-moz-focus-inner,
 input::-moz-focus-outer {
     border: 0;
 }
+
+input[type="radio"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin: 5px;
+    background-clip: content-box;
+    border: 1px solid #C9C9A6;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+background-color: #C9C9A6;
+}
+
+input[type="radio"]:focus {
+outline: none;
+border: 2px solid #dea764;
+background-color: #dea764;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+fieldset legend {
+    margin-bottom: 00.5rem;
+}
+
+fieldset div {
+    border: 1px solid #000000;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    padding: 00.25rem 0.5rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+fieldset div:last-child {
+    margin-right: 0;
+}
+
+fieldset div input {
+    margin-right: 0;
+    cursor: pointer;
+}
+
+fieldset div label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #fdc886;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.1rem;
+    font-family: 'Nova Mono' monospace;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    margin: 0.5rem auto 1.5rem;
+    border: 2px solid #fdc886;
+    border-radius: 0.5rem;
+    line-height: 1.1rem;
+    cursor: pointer
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    transition: all 0.15s ease-in-out;
+    transform: translateY(-0.2rem);
+}
+
+button:active {
+    background-color: #dea764;
+    transition: all 0.15s ease-in-out;
+    border: 2px solid #dea764;
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #dea764;
+}
+
+button:disabled {
+    outline: none;
+    transition: none;
+    transform: none;
+    cursor: not-allowed;
+}
+
+.submit {
+    display: flex;
+}
+
