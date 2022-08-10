@@ -50,6 +50,7 @@ main {
     font-size: 1rem;
     width: 80%;
     margin: 0 auto;
+
 }
 
 .setting {
@@ -59,7 +60,8 @@ main {
 }
 
 .sub-level {
-
+ font-weight: 200;
+ font-size: 0.9rem;
 }
 
 input[type="text"] {
@@ -75,4 +77,26 @@ input[type="text"] {
 input[type="text"]:focus {
     outline: none;
     border: 1px solid #C9A6C9
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colors .setting {
+    align-items: center;
+    text-align: center;
+}
+
+input[type="color"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    width: 50px;
+    height: 50px;
+    padding: 0.25rem;
+    cursor: pointer;
+
 }
