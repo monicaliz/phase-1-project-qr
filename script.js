@@ -25,3 +25,16 @@ addColorPickerEventListeners();
 //sliders
 const sizeSlider = document.querySelector('#size');
 const marginValue = document.querySelector('#size-value');
+
+const marginSlider = document.querySelector('#margin')
+const marginValue = document.querySelector('#margin-value')
+
+const updateSize = e = => {
+    const value = e.target.value;
+    sizeValue.innerText = `${value} x ${value}` 
+}
+
+const updateMargin = e = => {
+    const value = e.target.value;
+    marginValue.innerText = `${value} px` 
+}
