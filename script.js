@@ -111,8 +111,11 @@ dataInputEventListener();
 
 
 const onSubmit = () => {
-
     const data = dataInput.value;
+    if (!data.length) {
+        return showInputError();
+    }
+
     const color = qrColorPicker.value;
     const bgColor = bgColorPicker.value;
     const size = sizeSlider.value;
