@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <h1>QR Code Generator</h1>
+    <h1 class="heading">QR Code Generator</h1>
 
 <main>
     <section id="qr-settings-card" class="container container-front">
@@ -27,11 +27,12 @@
             <h3>Adjust the settings below to customize your QR code:</h3>
         </header>
 
-        <div class="setting">
-            <label for="data">text / url</label>
-            <span class="sub-label">include text or a url you want the QR code to lead to</span>
-            <input type="text" name="data" id="data" min="0" max="900" required />
-        </div>
+        <div>
+            <div class="setting">
+                <label for="data">text / url</label>
+                <span class="sub-label">include text or a url you want the QR code to lead to</span>
+                <input type="text" name="data" id="data" min="0" max="900" required />
+            </div>
 
         <div class="colors">
 
@@ -49,15 +50,20 @@
         </div>
 
         <div class="setting">
-            <label for="size">size</label>
+            <label for="size">Size</label>
             <span id="size-value" class="sub-label">200 x 200</span>
-            <input type="range" name="size" id="size" min="100" max="1000" value="200" step="100" />
+            <div class="slider">
+                <input name="size" id="size" type="range" value="200" min="100" max="1000" step="100">
+            </div>
         </div>
 
+
         <div class="setting">
-            <label for="margin">margin</label>
+            <label for="margin">Margin</label>
             <span id="margin-value" class="sub-label">1 px</span>
-            <input type="range" name="margin" id="size" min="0" max="100" value="1" step="1" />
+            <div class="slider">
+                <input type="range" name="margin" id="margin" min="0" max="50" value="1" />
+            </div>
         </div>
           
         <div class="setting">
@@ -85,6 +91,8 @@
     </section>
 
 </main>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
+
 </html>

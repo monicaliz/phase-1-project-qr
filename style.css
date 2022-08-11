@@ -59,7 +59,7 @@ main {
     flex-direction: column;
 }
 
-.sub-level {
+.sub-label {
  font-weight: 200;
  font-size: 0.9rem;
 }
@@ -277,4 +277,5 @@ button:disabled {
 .submit {
     display: flex;
 }
+
 
