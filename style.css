@@ -13,6 +13,44 @@ h1 {
    font-family: 'Nova Mono', monospace;
 }
 
+button {
+    background-color: #fdc886;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.1rem;
+    font-family: 'Nova Mono' monospace;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    margin: 0.5rem auto 1.5rem;
+    border: 2px solid #fdc886;
+    border-radius: 0.5rem;
+    line-height: 1.1rem;
+    cursor: pointer
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    transition: all 0.15s ease-in-out;
+    transform: translateY(-0.2rem);
+}
+
+button:active {
+    background-color: #dea764;
+    transition: all 0.15s ease-in-out;
+    border: 2px solid #dea764;
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #dea764;
+}
+
+button:disabled {
+    outline: none;
+    transition: none;
+    transform: none;
+    cursor: not-allowed;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -29,10 +67,21 @@ main {
 .container {
     background-color: #A6A6C9;
     border-radius: 1rem;
-    min-width: 300px;
+    min-width: 350px;
     max-width: 500px;
     width: 50%;
+    padding: 0 2rem;
     min-height: 700px;
+
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .container header {
@@ -236,43 +285,7 @@ fieldset div label {
     cursor: pointer;
 }
 
-button {
-    background-color: #fdc886;
-    padding: 0.5rem 1.25rem;
-    font-size: 1.1rem;
-    font-family: 'Nova Mono' monospace;
-    font-weight: 400;
-    border-radius: 0.3rem;
-    margin: 0.5rem auto 1.5rem;
-    border: 2px solid #fdc886;
-    border-radius: 0.5rem;
-    line-height: 1.1rem;
-    cursor: pointer
-    transition: all 0.15s ease-in-out;
-}
 
-button:hover {
-    transition: all 0.15s ease-in-out;
-    transform: translateY(-0.2rem);
-}
-
-button:active {
-    background-color: #dea764;
-    transition: all 0.15s ease-in-out;
-    border: 2px solid #dea764;
-}
-
-button:focus {
-    outline: none;
-    border: 2px solid #dea764;
-}
-
-button:disabled {
-    outline: none;
-    transition: none;
-    transform: none;
-    cursor: not-allowed;
-}
 
 .submit {
     display: flex;

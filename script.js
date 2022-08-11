@@ -120,8 +120,7 @@ const onSubmit = () => {
     const bgColor = bgColorPicker.value;
     const size = sizeSlider.value;
     const qZone = marginSlider.value;
-    const format = imageFormat.value;
-
+    const format = document.querySelector('input[name="format"]:checked').value
     const parameters = prepareParameters({ data, color, bgColor, size, qZone, format });
 
     getQrCode(parameters);
@@ -133,4 +132,15 @@ const addSubmitEventListener = () => {
 
 addSubmitEventListener();
 
+const editButton = document.querySelector('#edit');
 
+const onEdit = () => {
+    settingsContainer.classList.remove('flipped');
+    resultsContainer.classList.remove('flipped');
+};
+
+const addEditEventListener = () => {
+    editButton.addEventListener('click', onEdit);
+};
+
+addEditEventListener();
