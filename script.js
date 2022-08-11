@@ -38,3 +38,10 @@ const updateMargin = e = => {
     const value = e.target.value;
     marginValue.innerText = `${value} px` 
 }
+
+const addSliderEventListeners = () => {
+    sizeSlider.addEventListener('change', updateSize);
+    marginSlider.addEventListener('change', updateMargin)
+}
+
+addSliderEventListeners();
