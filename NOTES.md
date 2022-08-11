@@ -59,7 +59,9 @@ frontend sub-tasks:
 - submit button
 
 backend sub-tasks:
-
+o add query selectors
+o add event listeners for color picker
+o add event listener for sliders
 
 json request structure
 params: data - mandatory, size, color, bgcolor, qzone
